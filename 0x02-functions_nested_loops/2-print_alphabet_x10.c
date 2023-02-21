@@ -1,15 +1,26 @@
-#include "holberton.h"
+#include "main.h"
 
-void print _alphabet_10x(void)
+/**
+ * print_alphabet_x10 - code for ALX School students.
+ *
+ * Return: Always 0.
+ */
+
+void print_alphabet_x10(void)
 {
-	char i, l;
+	int i;
 
-	for (l = 0; l <= 9; l++)
+	for (i = 0; i < 10; i++)
 	{
-		for (i = 'a'; i <= 'z'; i++)
+		char alp = 'a';
+
+		while (alp <= 'z')
 		{
-			_putchar(i);
+
+		_putchar (alp);
+		alp++;
+
 		}
-	_putchar('\n');
+		_putchar ('\n');
 	}
 }

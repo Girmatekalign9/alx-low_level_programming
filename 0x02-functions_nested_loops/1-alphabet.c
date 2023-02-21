@@ -1,15 +1,21 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
-* print_alphabet - llamar la funcion desde el main
-*/
+ * print_alphabet -code for ALX students.
+ *
+ * Return: Always 0.
+ */
+
 void print_alphabet(void)
 {
-	char i;
+	char alp = 'a';
 
-	for (i = 'a'; i <= 'z'; i++)
+	while (alp <= 'z')
 	{
-		_putchar(i);
+		_putchar (alp);
+		alp++;
+
 	}
-	_putchar('\n');
+	_putchar ('\n');
+
 }

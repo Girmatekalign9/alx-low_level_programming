@@ -1,22 +1,44 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * jack_bauer - Imprimir todas las horas del dia
+ * jack_bauer - check the code for ALX School students.
+ *
+ * Return: Always 0.
  */
+
 void jack_bauer(void)
 {
-	int hour, minute;
+	int i;
+	int j;
+	int k;
+	int z;
+	int hr2;
 
-	for (hour = 0; hour <= 23; hour++)
+	for (i = 48; i < 51; i++)
 	{
-		for (minute = 0; minute <= 59; minute++)
+		if (i == 50)
 		{
-			_putchar((hour / 10) + '0');
-			_putchar((hour % 10) + '0');
-			_putchar(':');
-			_putchar((minute / 10) + '0');
-			_putchar((minute % 10) + '0');
-			_putchar('\n');
+			hr2 = 51;
+		}
+		else if (i != 50)
+		{
+			hr2 = 57;
+		}
+		for (j = 48; j <= hr2; j++)
+		{
+			for (k = 48; k < 54; k++)
+			{
+				for (z = 48; z <= 57; z++)
+				{
+					_putchar(i);
+					_putchar(j);
+					_putchar(':');
+					_putchar(k);
+					_putchar(z);
+					_putchar('\n');
+				}
+			}
 		}
 	}
+
 }

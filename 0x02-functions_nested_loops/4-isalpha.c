@@ -1,18 +1,23 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _isalpha - checks letter
- * @c: caracter recibo por main.
- * Return: 1 if c is lowercase
+ * _isalpha - code for ALX School students.
+ *
+ * @c: is c an integer argument
+ *
+ * Return: Always 0.
  */
+
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+
+	if (c >= 97 && c <= 122)
 	{
 		return (1);
 	}
-	else
+	else if (c >= 65 && c <= 90)
 	{
-		return (0);
+		return (1);
 	}
+	return (0);
 }

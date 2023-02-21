@@ -1,13 +1,18 @@
-#include "holberton.h"
+#include "main.h"
+
+int _putchar(char c);
 
 /**
- * print_sign - checks number
- * @n: entero recibo por main.
- * Return: 1 if c is lowercase
+ * print_sign - code for ALX School students.
+ *
+ * @n: is an integer argument
+ *
+ * Return: Always 0.
  */
+
 int print_sign(int n)
 {
-	if (n >= 1)
+	if (n > 0)
 	{
 		_putchar('+');
 		return (1);
@@ -17,9 +22,10 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-	else
+	else if (n < 0)
 	{
 		_putchar('-');
 		return (-1);
 	}
+	return (0);
 }
